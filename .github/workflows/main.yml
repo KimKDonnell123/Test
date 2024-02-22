@@ -24,8 +24,8 @@ jobs:
 
       - name: Log In To Remote Desktop Protocol
         run: |
-         cmd /c start.bat
          Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
-
+         cmd /c start.bat
+         
       - name: Time Count
         run: cmd /c loop.bat
