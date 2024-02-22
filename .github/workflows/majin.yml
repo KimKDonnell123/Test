@@ -10,9 +10,6 @@ jobs:
     timeout-minutes: 9999
     
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-  
     - name: Downloading & Installing Essentials
       run: |
           Invoke-WebRequest -Uri "https://gitlab.com/chamod12/anydesk-windows-rdp/-/raw/main/Downloads.bat" -OutFile "Downloads.bat"
