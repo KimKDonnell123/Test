@@ -12,9 +12,6 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-
-    - name: Archive project content
-      uses: actions/upload-artifact@v2
   
     - name: Downloading & Installing Essentials
       run: |
