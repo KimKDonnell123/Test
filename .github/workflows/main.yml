@@ -22,14 +22,6 @@ jobs:
       - name: Enabling RDP Access
         run: cmd /c Acess.bat
 
-      - name: Downloading & Installing Essentials
-        run: |
-          Invoke-WebRequest -Uri "https://raw.githubusercontent.com/chamodisala/Rustdesk-Windows-10-RDP/main/Downloads.bat" -OutFile "Downloads.bat"
-          cmd /c Downloads.bat
-
-      - name: Log In To AnyDesk
-        run: cmd /c show.bat
-
       - name: Log In To Remote Desktop Protocol
         run: cmd /c start.bat
          
